@@ -16,13 +16,8 @@ const {
 
 // Commented code could be chained (see below code):
 
-router.route('/')
-.get(getPeople)
-.post(createPerson)
-router.route('/postman')
-.post(createPersonPostman)
-router.route('/:id')
-.put(updatePerson)
-.delete(deletePerson)
+router.route('/').get(getPeople).post(createPerson)
+router.route('/postman').post(createPersonPostman)
+router.route('/:id').put(updatePerson).delete(deletePerson)
 
 module.exports = router
